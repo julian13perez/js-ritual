@@ -59,13 +59,16 @@ function buscarProducto() {
   );
   mostrarProductos(encontrados);
 }
-let cantidad = 5;
-let mensaje = "¡Bienvenido a la tienda deportiva!";
-let disponible = true;
+// Funciones básicas con Number, String y Boolean
+let cantidad = 5; // Number
+let mensaje = "¡Bienvenido a la tienda deportiva!"; // String
+let disponible = true; // Boolean
 console.log(cantidad, mensaje, disponible);
+// Ciclo con for
 for (let i = 1; i <= cantidad; i++) {
   console.log(`Producto número ${i}`);
 }
+// Ciclo while con opción salir
 let continuar = true;
 while (continuar) {
   let opcion = prompt("¿Deseas ver productos? (si/no)").toLowerCase();
@@ -78,6 +81,7 @@ while (continuar) {
     alert("Opción no válida.");
   }
 }
+// Eventos
 document
   .getElementById("productoForm")
   .addEventListener("submit", agregarProductoDesdeFormulario);
@@ -91,6 +95,7 @@ document.getElementById("ordenarBtn").addEventListener("click", () => {
 document.getElementById("buscarBtn").addEventListener("click", () => {
   buscarProducto();
 });
+// Aplicar IVA con map
 let productosConIVA = productos.map((producto) => {
   return {
     ...producto,

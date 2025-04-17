@@ -1,10 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Deportiva</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/index.js"></script>
-    <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Tienda de Ropa Deportiva</h1>
+      <p>
+        Explora nuestra tienda y simula tu compra de productos deportivos
+        favoritos
+      </p>
+    </header>
+    <main>
+      <section id="formulario">
+        <h2>Agregar nuevo producto</h2>
+        <form id="productoForm">
+          <input
+            type="text"
+            id="nombreProducto"
+            placeholder="Nombre del producto"
+            required
+          />
+          <input
+            type="number"
+            id="precioProducto"
+            placeholder="Precio"
+            required
+          />
+          <label>
+            <input type="checkbox" id="stockProducto" />
+            En stock
+          </label>
+          <button type="submit">Agregar</button>
+        </form>
+      </section>
+      <section id="acciones">
+        <h2>Acciones</h2>
+        <button id="mostrarBtn">Mostrar productos</button>
+        <button id="ordenarBtn">Ordenar por precio</button>
+        <input type="text" id="buscarInput" placeholder="Buscar producto..." />
+        <button id="buscarBtn">Buscar</button>
+      </section>
+      <section id="productos">
+        <h2>Productos Disponibles</h2>
+        <ul id="listaProductos"></ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Tienda Deportiva - Proyecto RITUAL JS</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>

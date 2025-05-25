@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta deportiva",
+    "precio": 60.0,
+    "stock": true
+  },
+  {
+    "id": 2,
+    "nombre": "Pantalón deportivo",
+    "precio": 80.0,
+    "stock": false
+  },
+  {
+    "id": 3,
+    "nombre": "Zapatillas running",
+    "precio": 120.0,
+    "stock": true
+  },
+  {
+    "id": 4,
+    "nombre": "Guantes de gimnasio",
+    "precio": 30.0,
+    "stock": true
+  }
+]
